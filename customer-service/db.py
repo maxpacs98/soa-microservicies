@@ -19,6 +19,13 @@ class Database:
                 customer = c
         return customer
 
+    def get_customer_by_id(self, id):
+        customer = None
+        for c in self.customers:
+            if c['id'] == id:
+                customer = c
+        return customer
+
     def add_customer(self, email, display_name):
         self.customers.append({'id': self.next_id, 'email': email, 'display_name': display_name})
         self.next_id = self.next_id + 1

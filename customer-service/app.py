@@ -10,9 +10,12 @@ def health():
     return 'ok'
 
 
-@app.route('/api/customer/<email>')
-def customer(email):
-    return {'customer': db.get_customer_by_email(email)}
+@app.route('/api/customer/<identifier>')
+def customer(identifier):
+    try:
+        return {'customer': db.get_customer_by_id(int(identifier))}
+    except ValueError:
+        return {'customer': db.get_customer_by_email(identifier)}
 
 
 @app.route('/api/customer/', methods=['POST'])

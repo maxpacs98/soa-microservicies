@@ -14,13 +14,6 @@ def movies():
     return movies_resp.json()
 
 
-# @app.route('/api/notify', methods=['POST'])
-# def notify():
-#     # TODO: Move this
-#     notify_resp = requests.post(NOTIFICATION_SERVICE_URL, json=request.get_json())
-#     return notify_resp.json()
-
-
 @app.route('/api/customer/<email>')
 def customer(email):
     customer_resp = requests.get(f'{CUSTOMER_SERVICE_URL}/{email}')
@@ -35,7 +28,13 @@ def add_customer():
 
 @app.route('/api/comment', methods=['POST'])
 def add_comment():
-    add_comment_resp = requests.post(COMMENT_SERVICE_URL, json=request.get_json())
+    data = request.get_json()
+    add_comment_resp = requests.post(COMMENT_SERVICE_URL, json=data)
+    if add_comment_resp.status_code == 200:
+        get_customer_email = requests.get(f'{CUSTOMER_SERVICE_URL}/{int(data["customer_id"])}')
+        if get_customer_email.status_code == 200:
+            requests.post(NOTIFICATION_SERVICE_URL, json={'email': get_customer_email.json()['customer']['email'],
+                                                          'movie_id': data['movie_id']})
     return add_comment_resp.json()
 
 
