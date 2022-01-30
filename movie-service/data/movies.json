@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Avatar",
+    "description": "Avatar is the best",
+    "duration": 10000,
+    "trailerLink": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+    "director": "James Cameron"
+  },
+    {
+    "id": 2,
+    "name": "Avatar",
+    "description": "Avatar is the best",
+    "duration": 10000,
+    "trailerLink": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+    "director": "James Cameron"
+  }
+]
