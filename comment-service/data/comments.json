@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "user_id": 1,
+    "customer_id": 1,
     "movie_id": 1,
     "text": "As of today, there are 2675 reviews for Avatar --many of them excellent and by reviewers I respect and enjoy. Because this film has been reviewed so many times and I am so late in seeing it, I will make review VERY quick, as there isn't a whole lot more I can say that hasn't already been said.",
     "commented_at": "2020-10-13"
   },
   {
     "id": 2,
-    "user_id": 1,
+    "customer_id": 1,
     "movie_id": 2,
     "text": "Nice 1",
     "commented_at": "2020-10-12"
   },
   {
     "id": 3,
-    "user_id": 2,
+    "customer_id": 2,
     "movie_id": 1,
     "text": "I did see Avatar for the first time a while ago, and didn't know what to make of it. To me it felt like a visual feast if little else. Re-watching it again, I found more strengths, but there are several weaknesses that prevent it from being a masterpiece.",
     "commented_at": "2020-10-11"
