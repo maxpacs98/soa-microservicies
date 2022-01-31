@@ -1,1 +1,1 @@
-email_template = "There is a new comment on a a movie you follow. Check it out at: %s"
+email_template = "You have successfully commented to a movie. Follow what others have to say at: %s"

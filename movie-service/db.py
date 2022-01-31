@@ -14,5 +14,11 @@ class Database:
     def get_movies(self):
         return self.movies
 
+    def get_movie_by_id(self, movie_id):
+        for m in self.movies:
+            if movie_id == m['id']:
+                return m
+        return None
+
 
 db = Database()

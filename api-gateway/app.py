@@ -14,6 +14,12 @@ def movies():
     return movies_resp.json()
 
 
+@app.route('/api/movies/<movie_id>')
+def movie_by_id(movie_id):
+    movie_resp = requests.get(f'{MOVIES_SERVICE_URL}/{movie_id}')
+    return movie_resp.json()
+
+
 @app.route('/api/customer/<email>')
 def customer(email):
     customer_resp = requests.get(f'{CUSTOMER_SERVICE_URL}/{email}')
