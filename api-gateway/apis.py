@@ -1,7 +1,7 @@
 import os
 
 if not os.environ.get('IS_DOCKER'):
-    movie_host = notification_host = customer_host = comment_host = '0.0.0.0'
+    movie_host = notification_host = customer_host = comment_host = '127.0.0.1'
 else:
     movie_host = 'movie-service'
     notification_host = 'notification-service'

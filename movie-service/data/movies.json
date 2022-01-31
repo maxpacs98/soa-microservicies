@@ -2,17 +2,17 @@
   {
     "id": 1,
     "name": "Avatar",
-    "description": "Avatar is the best",
-    "duration": 10000,
-    "trailerLink": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+    "description": "When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid Navi in order to mine for the precious material scattered throughout their rich woodland",
+    "duration": 360,
+    "trailerLink": "www.youtube.com/watch?v=5PSNL1qE6VY",
     "director": "James Cameron"
   },
     {
     "id": 2,
-    "name": "Avatar",
-    "description": "Avatar is the best",
-    "duration": 10000,
-    "trailerLink": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
-    "director": "James Cameron"
+    "name": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "duration": 200,
+    "trailerLink": "www.youtube.com/watch?v=6hB3S9bIaco",
+    "director": "Frank Darabont"
   }
 ]
