@@ -22,7 +22,7 @@ class Database:
     def get_comments_for_user_id(self, user_id):
         comments = []
         for c in self.comments:
-            if c['user_id'] == user_id:
+            if c['customer_id'] == user_id:
                 comments.append(c)
         return comments
 
