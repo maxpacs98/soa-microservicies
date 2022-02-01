@@ -1,8 +1,12 @@
+import logging
+
 from flask import Flask, request
 
 from template import email_template
 
 app = Flask(__name__)
+
+logger = logging.getLogger(__name__)
 
 
 @app.route('/api/notify/', methods=["POST"])
