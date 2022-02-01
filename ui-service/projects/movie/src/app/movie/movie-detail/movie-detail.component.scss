@@ -1,0 +1,21 @@
+.button {
+  margin-top: 32px;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  padding: 6px 12px;
+  background-color: #25253A;
+  border: none;
+  color: white;
+  width: 300px;
+  border-radius: 4px;
+
+  span {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+}

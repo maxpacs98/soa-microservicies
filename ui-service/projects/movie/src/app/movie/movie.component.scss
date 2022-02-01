@@ -1,0 +1,46 @@
+.movies-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie {
+  padding: 16px;
+  margin-top: 16px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #25253A;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background-color: white;
+  border: none;
+  color: #25253A;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+.director-and-duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 8px;
+}

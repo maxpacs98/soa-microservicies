@@ -1,0 +1,17 @@
+.toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #25253A;
+  height: 60px;
+  padding: 0 16px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+}

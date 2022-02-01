@@ -1,0 +1,37 @@
+<div class="home__wrapper">
+  <span class="home__title">This is yout favorite movie tracking app</span>
+  <span class="home__title">Please enter your email below.</span>
+
+
+  <!--  <input class="home__input" matInput [formControl]="nameControl">-->
+  <div style="margin-top: 16px;">
+    <mat-form-field style="height: 40px" color="primary" appearance="outline">
+      <input matInput [formControl]="emailControl" [errorStateMatcher]="matcher" placeholder="Email"
+             style="margin-top: 8px; font-size: 14px;">
+      <mat-error *ngIf="emailControl.hasError('email') && !nameControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="showNameInput" style="margin-top: 32px;">
+    <mat-form-field style="height: 40px" color="primary" appearance="outline">
+      <input matInput [formControl]="nameControl" [errorStateMatcher]="matcher" placeholder="Name"
+             style="margin-top: 8px; font-size: 14px;">
+      <mat-error *ngIf="nameControl.hasError('minLength')">
+        Minimum length of <strong>3</strong>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <button *ngIf="!showNameInput" (click)="authenticate()" class="home__button">
+    <span>Login</span>
+  </button>
+  <button *ngIf="showNameInput" (click)="register()" class="home__button">
+    <span>Register</span>
+  </button>
+
+</div>

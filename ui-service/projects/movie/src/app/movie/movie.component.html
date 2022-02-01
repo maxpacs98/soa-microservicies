@@ -1,0 +1,12 @@
+<div class="movies-wrapper">
+  <div *ngFor="let movie of movies" class="movie">
+    <a [href]="movie.trailerLink" target="_blank" style="text-decoration: none"><span class="title">{{movie.name}}</span></a>
+    <span>{{movie.description}}</span>
+    <div class="director-and-duration">
+      <span>Directed by: {{movie.director}}</span>
+      <span>{{movie.duration | duration}}</span>
+    </div>
+    <iframe [src]="getUrl(movie.trailerLink)" width="420" height="345" ></iframe>
+    <button class="button" (click)="comment(movie)">Comment</button>
+  </div>
+</div>
